@@ -1,0 +1,13 @@
+<div *ngIf="!showTicks" class="col-xs-8 text-center">
+  <span class="timerelement" [class.selected]="selected === 0" (click)="clickElement(0)">{{mm}}</span> :
+  <span class="timerelement" [class.selected]="selected === 1" (click)="clickElement(1)">{{ss}}</span>
+</div>
+<div *ngIf="showTicks" class="col-xs-8 text-center">
+  <span class="timerelement" (click)="clickElement(1)">{{value}}</span>
+</div>
+<div class="col-xs-2">
+  <a class="btn btn-link btn-lg" (click)="addValue()" ><i class="fa fa-plus fa-5x"></i></a>
+</div>
+<div class="col-xs-2">
+  <a class="btn btn-link btn-lg" (click)="subValue()" ><i class="fa fa-minus fa-5x"></i></a>
+</div>

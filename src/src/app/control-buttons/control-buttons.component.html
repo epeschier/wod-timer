@@ -1,0 +1,20 @@
+<div id="ControlButtons" class="row">
+  
+    <div class="col-xs-3">
+      <a class="btn btn-link btn-lg" routerLink="{{settingsUrl}}" *ngIf="visibleButtons.settings"><i class="fa fa-gears fa-5x"></i></a>
+    </div>  
+  
+    <div class="col-xs-3">
+      <a class="btn btn-link btn-lg" (click)="reset()" *ngIf="visibleButtons.reset"><i class="fa fa-step-backward fa-5x"></i></a>
+    </div>
+  
+    <div class="col-xs-3">         
+      <a class="btn btn-link btn-lg" (click)="start()" *ngIf="visibleButtons.start"><i class="fa fa-play fa-5x"></i></a>
+      <a class="btn btn-link btn-lg" (click)="stop()" *ngIf="visibleButtons.stop"><i class="fa fa-stop fa-5x"></i></a>
+    </div>
+  
+    <div class="col-xs-3">
+      <a class="btn btn-link pull-right btn-lg" (click)="close()" ><i class="fa fa-times fa-5x" style="color:#d00;"></i></a>
+    </div>
+  </div>
+  

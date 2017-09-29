@@ -1,0 +1,4 @@
+<div class="clock-container">
+  <span *ngIf="state !== TimerState.CountIn" [ngClass]="{'red': this.tick < 4 }" class="clock-text">{{time | date:'HH:mm:ss' }}</span>
+  <countin *ngIf="state === TimerState.CountIn" (onReady)="onCountInReady($event)"></countin>
+</div>

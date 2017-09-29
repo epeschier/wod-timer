@@ -1,0 +1,13 @@
+.rounds {
+	padding-left: 30px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 10vw;
+	color: #337ab7;
+}
+
+.progress-bottom {
+	bottom: 120px;
+	padding: 10px 20px 0 20px;	
+}

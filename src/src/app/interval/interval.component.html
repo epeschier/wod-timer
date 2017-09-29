@@ -1,0 +1,12 @@
+<div class="logo"></div>
+
+<countdown #timer1 [seconds]="20" [startOnInit]="started" *ngIf="selectedTimer === 0" (onTimerDone)="onTimerDone($event)"></countdown>  
+<countdown #timer2 [seconds]="10" [startOnInit]="started" *ngIf="selectedTimer === 1" (onTimerDone)="onTimerDone($event)"></countdown>
+
+<div class="progress-bottom navbar-fixed-bottom">
+  <progress-bar [currentRound]="currentRound" [totalRounds]="totalRounds"></progress-bar>
+</div>
+
+<div class="footer navbar-fixed-bottom">
+  <control-buttons [settingsUrl]="'/interval-settings'" (onButtonClick)="onButtonClick($event)"></control-buttons>
+</div>

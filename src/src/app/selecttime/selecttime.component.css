@@ -1,0 +1,7 @@
+.timerelement:hover {
+	color: #337ab7;
+	cursor: pointer;
+}
+.timerelement.selected {
+	color: orange;
+}

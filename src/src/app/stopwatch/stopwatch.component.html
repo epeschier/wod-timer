@@ -1,0 +1,12 @@
+<div class="logo"></div>
+
+<div class="clock-container">
+  <span *ngIf="state !== TimerState.CountIn" class="clock-text">{{time | date:'HH:mm:ss' }}</span>
+  <countin *ngIf="state === TimerState.CountIn" (onReady)="onCountInReady($event)"></countin>
+</div>
+
+ <!-- Footer buttons -->
+ <div class="footer navbar-fixed-bottom">
+  <!-- Control buttons -->
+  <control-buttons (onButtonClick)="onButtonClick($event)"></control-buttons>
+</div>

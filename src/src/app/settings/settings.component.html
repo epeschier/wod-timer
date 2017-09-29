@@ -1,0 +1,14 @@
+<div id="Settings" class="container-fluid">
+  <div class="row settingstext">
+    <div class="col-md-2">
+        <i class="fa fa-clock-o"><sub>1</sub></i>
+    </div>
+    <div class="col-md-10 ">
+      <selecttime [(value)]="settings.countdown"></selecttime>
+    </div>
+  </div>
+</div>
+
+<div class="footer navbar-fixed-bottom">
+    <a class="btn btn-link pull-right btn-lg" (click)="close()" ><i class="fa fa-times fa-5x red"></i></a>
+</div> 

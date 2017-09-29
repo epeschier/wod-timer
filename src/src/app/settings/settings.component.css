@@ -1,0 +1,12 @@
+.settingstext {
+	font-weight: bold;
+	font-size: 14vw;
+	font-kerning:none;
+	color: #FFFFFF;
+}
+
+.settings-buttons {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
